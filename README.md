@@ -1,2 +1,12 @@
 # Make_your_resume
-Type your data to get your resume (arabic only for now)
+Type your data to get your resume (arabic only for now).
+
+## about the project
+
+This is a test project to get better with html, css and vanilla js
+
+At the end the website is going to generate a html page but there is no PDF.
+
+I tryed HTML2PDF and jsPDF with HTML2Canvas but none of them support rtl writing.
+
+I probably could use an API in the backend but I am not into backend for now, so this project may be real when I finish my full-stack learning.
