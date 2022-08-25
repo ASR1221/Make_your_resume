@@ -3,7 +3,7 @@ Type your data to get your resume (arabic only for now).
 
 ## Use the website
 
-you can use thewbsite just by following this link : abdullahsalah.cne-db.com
+you can use thewbsite just by following this link : [abdullahsalah.cne-db.com](abdullahsalah.cne-db.com)
 
 note : this url is for my college so it may hve some not be the fastest. When the project is complete I will use a real url and a good server.
 ## about the project
