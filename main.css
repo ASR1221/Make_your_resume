@@ -1,0 +1,364 @@
+:root{
+    --primary: black;
+    --secondary: #f1f1f1;
+    --focus: blue;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(#1a3645,#320796 );
+    background-size: 100% 400%;
+    animation: bg 12s infinite;
+    overflow-x: hidden;
+}
+
+@keyframes bg {
+    0%   {background-position: 0% 0%;}
+    50%  {background-position: 100% 100%;}
+    100% {background-position: 0% 0%;}
+}
+
+.nav{
+    font-size: 1.1rem;
+    background-color: var(--primary);
+    box-shadow: -2px 0 10px var(--primary);
+    color: var(--secondary);
+    overflow: hidden;
+    line-height: 1rem;
+}
+
+.logo {
+    padding: 1rem 1rem;
+    float: right;
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.logo:hover{
+    color: red;
+}
+
+.list {
+    float: left;
+    display: flex;
+}
+
+.list a{
+    padding: 1rem .65rem;
+    text-decoration: none;
+    color: var(--secondary);
+    transition: .4s;
+}
+
+.list a:hover,
+.list a:focus{
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.intro{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.4rem;
+    color: var(--secondary);
+}
+
+@media screen and (min-width:900px){
+    .intro{
+        background-image: url("images/Profile-data-pana.svg");
+        background-size: 70% 70%;
+        background-position: -130px 100px;
+    }
+    .container{
+        background-image: url("images/Profile-Interface-bro.svg");
+        background-size: 50%;
+    }
+    .intro,
+    .container{
+        background-repeat: no-repeat;
+    }
+}
+
+.intro-heading{
+    width: 60%;
+}
+
+.choose-resume{
+    width: 90%;
+    margin: 2rem auto;
+    color: var(--secondary);
+}
+
+.choose-heading,
+.form-header{
+    width: fit-content;
+    margin: 1rem 0;
+    background-color: var(--primary);
+    padding: .7rem 2.5rem;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px 1px var(--primary);
+    margin: 2rem auto;
+}
+
+.form-header{
+    color: var(--secondary);
+}
+
+.choose-img{
+    width: 90%;
+    margin: 1rem 5%;
+    border-radius: 10px;
+    transition: 1.5s;
+}
+
+.choose-img:hover,
+.choose-img:focus,
+.choose-img:active{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px 3px var(--secondary);
+}
+
+#footer{
+    height: 15rem;
+    background-color: var(--primary);
+    box-shadow: -2px 0 10px var(--primary);
+    padding: 3rem 0;
+    color: var(--secondary);
+}
+
+.about{
+    text-align: center;
+    font-size: larger;
+}
+
+.accounts{
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.accounts-img{
+    width: 3rem;
+    height: 3rem;
+    transition: 1s;
+}
+
+.accounts a{
+    text-decoration: none;
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+}
+
+.accounts a:hover,
+.accounts a:focus,
+.accounts a:active{
+    color: red;
+}
+
+a:hover .accounts-img{
+    transform: scale(1.1);
+}
+
+
+@media screen and (min-width: 640px) {
+    
+    .intro{
+        font-size: 1.5rem;
+    }
+    
+    .intro-heading{
+        font-size: 3.5rem;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: minmax(16rem, 29rem) minmax(16rem, 29rem);
+        gap: 1rem;
+        width: fit-content;
+        margin: 0 auto;
+    } 
+    
+    .accounts{
+        width: 35%;
+    }
+}
+
+
+/*----------- Form -------------*/
+
+
+
+#myForm{
+    padding: 1rem 2rem;
+    max-width: 700px;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: 1rem 0;
+}
+
+label{
+    color: var(--secondary);
+    padding-top: 8px;
+    width: 35%;
+}
+
+input{
+    width: 60%;
+    margin: .3rem 0;
+    padding: 5px;
+    color: var(--secondary);
+    background-color: transparent;
+    border: none;
+    border-bottom: var(--primary) 2px solid;
+}
+
+input:focus,
+textarea:focus{
+    outline: 1px solid var(--focus);
+    border: none;
+    box-shadow: 1px 1px 10px 3px var(--focus);
+}
+
+input:focus{
+    border-radius: 5px;
+}
+
+textarea{
+    padding: 5px;
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    resize: none;
+    border-radius: 10px;
+    color: var(--secondary);
+}
+
+.span{         /* skills edu and exp sections */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-div{    /* skills section does not take full width so this is the solution */
+    width: 100%;
+}
+
+.sm-head{     /* edu and exp head(p) */
+    color: var(--secondary);
+    font-size: large;
+    margin-top: 2rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--secondary);
+    width: 7rem;
+}
+
+/* button style */
+
+button{
+    width: 7rem;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+button,
+.file{
+    cursor: pointer;
+}
+
+button:last-child{
+    background-color: var(--secondary);
+    box-shadow: 1px 1px 10px 3px var(--primary);
+    color: var(--primary);
+    font-weight: 500;
+    display: block;
+    position: relative;
+    right: 37%;
+}
+
+button:hover,
+button:focus,
+.file:hover,
+.file:focus{
+    box-shadow: 1px 1px 10px 3px var(--secondary);
+}
+
+/* end button style */
+
+
+/* style file button */
+
+input[type="file"] {
+    display: none;
+}
+
+.file{
+    padding: 5px;
+    width: 9rem;
+    background-color: var(--focus);
+    color: var(--secondary);
+    box-shadow: 1px 1px 10px 3px var(--primary);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.file img{
+    width: 35px;
+}
+
+/* end style file button */
+
+
+/* hide arrows from input type number */
+
+/* edge chrome */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* end hide arrows from input type number */
+
+
+/* auto complete style */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 9999s;
+  transition-delay: 9999s;
+  -webkit-text-fill-color: var(--secondary) !important;
+}
+
+
+
+
+
+
+
+
+    

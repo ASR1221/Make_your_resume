@@ -1,0 +1,78 @@
+:root{
+    --primary: #E3EBF2;
+    --secondary: #88A9C3;
+    --contact: #345E7D;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.container{
+    width: 595px;
+    height: 842px;
+    margin: 0 auto;
+    padding: 2rem 2rem 2rem 3rem;
+    background-color: var(--primary);
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.name-section{
+    grid-row: span 2;
+    border-top-left-radius: 50% 120px;
+    border-top-right-radius: 50% 120px;
+    width: 16rem;
+    height: 26rem;
+    background-color: var(--secondary);
+    padding: 2rem;
+}
+
+#img{
+    width: 100%;
+    max-height: 16rem;
+    border-top-left-radius: 50% 100px;
+    border-top-right-radius: 50% 100px;
+}
+
+.role{
+    background-color: var(--primary);
+    border-radius: 15px;
+    font-size: large;
+    padding: 5px;
+    margin: 7px 0;
+}
+
+.aboutMe{
+    background-color: var(--secondary);
+    border-radius: 25px;
+    margin-top: 2.7rem;
+    padding: 12px;
+    width: 220px;
+    height: 150px;
+}
+
+.contact{
+    height: 10rem;
+}
+
+.exp{
+    grid-row: span 2;
+    height: 22rem;
+}
+
+h2{
+    background-color: var(--secondary);
+    width: 120px;
+    padding: 7px;
+    border-radius: 15px;
+    margin-bottom: .6rem;
+    color: var(--primary);
+    text-align: center;
+}
+
+
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="icon" type="image/x-icon" href="../images/icons8-resume-color-hand-drawn-32.png">
+    <script src="../script/form.js" defer></script>
+    <title>اصنع سيرتك بسهولة / ادخل بياناتك</title>
+</head>
+<body dir="rtl">
+
+    <nav class="nav">
+        <a href="#" class="logo">ASR</a>
+        <div class="list" id="navList">
+            <a href="../index.html" class="nav-img"> الرئيسية</a>
+            <a href="../index.html#choose">اختر تصميمك</a>
+            <a href="#footer">عن الموقع</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="form-header">ادخل معلوماتك</h2>
+        <form id="myForm">
+            <div class="flex-container">
+                <label for="name">الاسم</label>
+                <input type="text" name="name" id="name" placeholder="عبدالله صلاح" class="single-inputs"> 
+                <label for="age">العمر</label>
+                <input type="number" name="age" id="age" placeholder="20" class="single-inputs">
+                <label for="jender">الجنس</label>
+                <input type="text" name="jender" id="jender" placeholder="ذكر" class="single-inputs">
+                <label for="phone">رقم الهاتف</label>
+                <input type="text" name="phone" id="phone" placeholder="07*********" class="single-inputs">
+                <label for="residence">السكن</label>
+                <input type="text" name="residence" id="residence" placeholder="بغداد / حي *****" class="single-inputs">
+                <label for="email">الايميل</label>
+                <input type="email" name="email" id="email" placeholder="examole@gmail.com" class="single-inputs">
+                <label for="role">المسمى الوظيفي</label>
+                <input type="text" name="role" id="role" placeholder="مطور تطبيقات" class="single-inputs">
+            </div>
+
+            <div class="flex-container">
+                <label for="aboutMe">تحدث عن نفسك:</label>
+                <textarea name="aboutMe" id="aboutMe" cols="41" rows="5"></textarea>
+            </div>
+
+            <p class="sm-head">المهارات</p>
+            <div class="flex-container" id="skills-sec">
+                <div class="span skill-div">
+                    <label for="skills1">مهارة 1</label>
+                    <input type="text" name="skills1" class="skills" placeholder="تصميم غرافيك">
+                </div>
+            </div>
+            <button type="button" onclick="addMoreSkills(this)">اضافة المزيد</button>
+
+            <p class="sm-head">التعليم</p>
+            <div class="flex-container" id="edu-sec">
+                <div class="span">
+                    <label for="university1" >الجامعة</label>
+                    <input type="text" name="university1" placeholder="جامعة بغداد">
+                    <label for="degree1">الشهادة</label>
+                    <input type="text" name="degree1" placeholder="هتدسة عمارة">
+                    <label for="year1">السنة</label>
+                    <input type="text" name="year1" placeholder="2020">
+                </div>
+            </div>
+            <button type="button" onclick="addMoreEdu(this)">اضافة المزيد</button>
+            
+            <p class="sm-head">الخبرات</p>
+            <div class="flex-container" id="exp-sec">
+                <div class="span">
+                    <label for="company1">الشركة</label>
+                    <input type="text" name="company1" placeholder="زين">
+                    <label for="role1">المنصب</label>
+                    <input type="text" name="role1" placeholder="موظف اداري">
+                    <label for="start1">البداية</label>
+                    <input type="text" name="start1" placeholder="2014">
+                    <label for="end1">النهاية</label>
+                    <input type="text" name="end1" placeholder="الحاضر او 2020">
+                </div>
+            </div>
+            <button type="button" onclick="addMoreExp(this)">اضافة المزيد</button><br>
+            <div class="flex-container">
+                <label for="img" class="file"><img src="../images/icons8-name-100.png" alt=""> اضف صورتك</label>
+                <input id="img" type="file" name="img" accept="image/png, image/jpeg" required>
+            </div>
+            
+            <button type="submit">اكمال</button>
+
+        </form>
+    </div>
+
+    <footer id="footer">
+        <p class="about">تم تصميم و برمجة هذا الموقع من قبل <br> عبدالله صلاح</p>
+        <div class="accounts">
+            <a href="https://www.linkedin.com/in/abdullah-salah-29209b235"><img src="../images/icons8-linkedin.svg" class="accounts-img">Abdullah Salah</a>
+            <a href="mailto:asr12211@outlook.com"><img src="../images/icons8-gmail-logo.svg" class="accounts-img">asr12211<br>@outlook.com</a>
+            <a href="https://github.com/ASR1221"><img src="../images/icons8-github-squared.svg" class="accounts-img"> ASR1221</a>
+            <a href="https://t.me/asr_1221"><img src="../images/icons8-telegram-app.svg" class="accounts-img"> asr_1221</a>
+        </div>
+    </footer>
+</body>
+</html>
+

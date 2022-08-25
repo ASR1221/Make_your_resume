@@ -1,0 +1,81 @@
+:root{
+    --primary: #b0b1b3;
+    --secondary: #252527;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.container{
+    background-color: var(--primary);
+    width: 595px;
+    height: 842px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.topdiv{
+    background-color: var(--secondary);
+    height: 10rem;
+}
+
+.heading {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: absolute;
+    top: 3rem;
+    left: 3.5rem;
+}
+
+#img{
+    height: 10.7rem;
+    width: 10.7rem;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: .2rem;
+    margin: .5rem;
+    border: 8px solid var(--secondary);
+}
+
+.aps-head{
+    margin: 1.5rem .8rem;
+}
+
+.name-heading, .role{
+    color: var(--primary);
+    margin: .4rem 0;
+}
+
+.role{
+    font-size: large;
+}
+
+.grid{
+    margin: 5rem .8rem 0 3.5rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.aboutMe{
+    width: 17rem;
+    word-wrap:break-word;
+}
+
+h2{
+    margin: .6rem 0;
+}
+
+footer{
+    width: 100%;
+    height: 2rem;
+    background-color: var(--secondary);
+    position: absolute;
+    bottom: 0;
+}
+
+
+
